@@ -1,0 +1,53 @@
+@import "./styles/theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-text;
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-panel border border-border rounded-2xl shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition
+      disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-brand-ink hover:opacity-90;
+  }
+  .btn-secondary {
+    @apply btn bg-panel text-text border border-border-strong hover:bg-panel-2;
+  }
+  .btn-ghost {
+    @apply btn text-dim hover:bg-panel-2 hover:text-text;
+  }
+  .btn-danger {
+    @apply btn bg-danger text-white hover:opacity-90;
+  }
+  .input {
+    @apply w-full rounded-lg border border-border-strong bg-panel px-3 py-2 text-sm text-text
+      placeholder:text-mute focus:outline-none focus:ring-2 focus:ring-brand-soft focus:border-brand;
+  }
+  .label {
+    @apply mb-1 block text-sm font-medium text-dim;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+}

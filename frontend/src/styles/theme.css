@@ -1,0 +1,49 @@
+/* Tokens de tema. Os componentes usam as cores do Tailwind mapeadas para
+   estas variáveis (tailwind.config.js) — trocar de tema é só trocar a classe. */
+
+:root,
+.theme-claro {
+  --bg: #f5f3ee;
+  --panel: #ffffff;
+  --panel-2: #f0ede6;
+  --border: #e4dfd4;
+  --border-strong: #cfc8b8;
+  --text: #17202b;
+  --text-dim: #4f5b69;
+  --text-mute: #8a93a0;
+  --brand: #1e3a5f;
+  --brand-soft: #e3eaf3;
+  --brand-ink: #ffffff;
+  --accent: #b7791f;
+  --accent-soft: #fbefd9;
+  --ok: #1f7a4d;
+  --ok-soft: #dff3e8;
+  --danger: #b4232f;
+  --danger-soft: #fbe3e5;
+  --shadow-card: 0 1px 2px rgba(23, 32, 43, 0.04), 0 8px 24px -12px rgba(23, 32, 43, 0.12);
+  --hero-grad: linear-gradient(135deg, #1e3a5f 0%, #2c5282 60%, #35618f 100%);
+  color-scheme: light;
+}
+
+.theme-escuro {
+  --bg: #0f151d;
+  --panel: #161e29;
+  --panel-2: #1c2633;
+  --border: #253142;
+  --border-strong: #34445a;
+  --text: #e8edf3;
+  --text-dim: #a7b3c2;
+  --text-mute: #6c7a8c;
+  --brand: #7fb0e8;
+  --brand-soft: #1d2d42;
+  --brand-ink: #0f151d;
+  --accent: #f2b544;
+  --accent-soft: #3a2e17;
+  --ok: #5fd39a;
+  --ok-soft: #173326;
+  --danger: #ff7b86;
+  --danger-soft: #3b1d22;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px -14px rgba(0, 0, 0, 0.6);
+  --hero-grad: linear-gradient(135deg, #14263d 0%, #1b3556 60%, #23466e 100%);
+  color-scheme: dark;
+}
