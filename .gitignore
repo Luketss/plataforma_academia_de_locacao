@@ -1,0 +1,22 @@
+# Ambiente
+.env
+.env.local
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+*.log
